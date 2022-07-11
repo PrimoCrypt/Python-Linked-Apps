@@ -10,9 +10,9 @@ error = print("this is an error")
 def appList(programList):
     for dispList in programList:
         return dispList
-appList
-selection = input(f"pick from these list{appList(programList)}: ")
-if (selection == "1"):
+appList(programList)
+selection = int(input(f"pick from these list{appList(programList)}: "))
+if (selection == 1):
     def calculator(selection):    
         x = int(input("x: "))
         sign = input("sign(* , + , - or /): ")
