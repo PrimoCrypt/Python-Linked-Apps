@@ -1,31 +1,31 @@
 
 from calendar import c
 
-
 one = "1. Calculator"
 two = "2. Hello your name"
 programList = [one , two]
+error = "this is an error"
 
-error = print("this is an error")
-def appList(programList):
-    for dispList in programList:
-        return dispList
-appList(programList)
-selection = int(input(f"pick from these list{appList(programList)}: "))
+print("pick from these list")
+print("")
+print("    1. Calculator")
+print("    2. Hello Your Name")
+print("")
+
+selection = int(input(f"enter your option: "))
 if (selection == 1):
-    def calculator(selection):    
-        x = int(input("x: "))
-        sign = input("sign(* , + , - or /): ")
-        y = int(input("y: "))
-
-        if (sign == "+"):
-            print(f"result for {x} + {y} = {x + y}")
-        elif (sign == "-"):
-            print(f"result for {x} - {y} = {x - y}")
-        elif (sign == "*"):
-            print(f"result for {x} x {y} = {x * y}")
-        elif (sign == "*"):
-            print(f"result for {x} / {y} = {x / y}")
-        else:
-            print("Unrecognized input, please try again later")
-    calculator
+    print("")
+    print("Calculator Loading...")
+    print("")
+    print("Welcome to Calculator app")
+    print("")
+    from calculator import calculator
+elif (selection == 2):
+    print("")
+    print("Hello Loading...")
+    print("")
+    print("Welcome to Hello your name app")
+    print("")
+    from hello import hello
+else:
+    print(f"Input not available pick either {one} or {two}")
