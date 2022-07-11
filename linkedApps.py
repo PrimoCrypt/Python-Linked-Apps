@@ -4,7 +4,7 @@ from calendar import c
 one = "1. Calculator"
 two = "2. Hello your name"
 programList = [one , two]
-error = "this is an error"
+selectionError = "this is an error with your selection"
 
 print("pick from these list")
 print("")
@@ -28,4 +28,5 @@ elif (selection == 2):
     print("")
     from hello import hello
 else:
+    print(selectionError)
     print(f"Input not available pick either {one} or {two}")
